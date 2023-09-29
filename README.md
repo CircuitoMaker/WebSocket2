@@ -22,4 +22,5 @@ Uma API de WebSocket usa um protocolo de comunicação bidirecional que permite 
 - O servidor deve retornar a frase "Voce disse" seguido do texto que você enviou.
 
 
+![Insomnia](https://github.com/CircuitoMaker/WebSocket2/assets/3664249/0ee2a183-0d05-4de1-b919-fce4cddee0d2)
 
