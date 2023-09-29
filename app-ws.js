@@ -6,13 +6,14 @@ function onError(ws, err) {
 
 function onMessage(ws, data) {
     console.log(`onMessage: ${data}`);
-    ws.send(`recebido!`);
+    ws.send(`Voce disse ${data}`);
 }
 
 function onConnection(ws, req) {
     ws.on('message', data => onMessage(ws, data));
     ws.on('error', error => onError(ws, error));
     console.log(`onConnection`);
+    ws.send(`Seja bem vindo ao servidor WebSocket! `);
 }
 
 module.exports = (server) => {
